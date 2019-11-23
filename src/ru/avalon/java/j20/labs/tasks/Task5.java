@@ -33,7 +33,8 @@ public class Task5 implements Task {
 
         List<Integer> list = Arrays.asList(ar);
 
-        Set<Integer> set = 
+        Set<Integer> set = new HashSet<Integer>();
+        Collections.addAll(set, ar);
         /**
          * TODO(Студент): Выполните задание №5
          *
