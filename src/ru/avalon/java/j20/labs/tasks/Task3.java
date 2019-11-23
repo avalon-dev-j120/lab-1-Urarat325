@@ -3,16 +3,29 @@ package ru.avalon.java.j20.labs.tasks;
 import ru.avalon.java.j20.labs.Task;
 
 import java.util.Iterator;
+import ru.avalon.java.j20.labs.models.Fibonacci;
+import java.util.Iterator;
 
 /**
  * Задание №3
  *
- * <p>Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
+ * <p>
+ * Тема: "Изучение интерфейсов {@link Iterable} и {@link Iterator}".
  */
 public class Task3 implements Task {
 
     @Override
     public void run() {
+
+        Fibonacci fi = new Fibonacci(20);
+        Iterator fibo =fi.iterator();
+        Integer fiboSum = 0;
+        while (fibo.hasNext()){
+            Integer fnum = (Integer) fibo.next();
+            fiboSum+=fnum;
+        }
+        
+        
         /*
          * TODO(Студент): Выполнить задание №3
          *
@@ -33,6 +46,6 @@ public class Task3 implements Task {
          *
          * 4. С использованием отладчика проверьте корректность
          *    выполнения задания.
-         */
+                 */
     }
 }

@@ -1,5 +1,6 @@
 package ru.avalon.java.j20.labs;
 
+import ru.avalon.java.j20.labs.models.Fibonacci;
 import ru.avalon.java.j20.labs.tasks.*;
 
 /**
